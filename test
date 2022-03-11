@@ -1,0 +1,99 @@
+if(getDvar("g_gametype") == "dm")
+{
+setgametypesetting("teamCount", 1); 
+setgametypesetting("timelimit", 10); 
+setgametypesetting("scorelimit", 75);
+setgametypesetting("playerNumLives", 0);
+setgametypesetting("teamScorePerKill", 1);
+setgametypesetting("teamScorePerDeath", 0);
+setgametypesetting("teamScorePerHeadshot", 0);
+setgametypesetting("roundStartExplosiveDelay", 2);
+setgametypesetting("roundStartKillstreakDelay", 0);
+}
+
+if(getDvar("g_gametype") == "gun")
+{
+setgametypesetting("teamCount", 1);
+setgametypesetting("timelimit", 10);
+setgametypesetting("scorelimit", 0);
+setgametypesetting("allowInGameTeamChange", 0);
+setgametypesetting("setbacks", 2);
+setgametypesetting("gunSelection", 3);
+setgametypesetting("loadoutKillStreaksEnabled", 0);
+setgametypesetting("forceradar", 0);
+SetDvar("scr_showperksonspawn", 0);
+setgametypesetting("playerNumLives", 0); 
+setgametypesetting("hardcoremode", false);
+}
+
+if(getDvar("g_gametype") == "oic")
+{
+setgametypesetting("teamCount", 1);
+setgametypesetting("timelimit", 5); 
+setgametypesetting("scorelimit", 0);
+setgametypesetting("allowInGameTeamChange", 0);
+setgametypesetting("playerNumLives", 9);
+setgametypesetting("pointsPerWeaponKill", 10);
+setgametypesetting("pointsPerMeleeKill", 10);
+setgametypesetting("pointsForSurvivalBonus", 5);
+setgametypesetting("loadoutKillStreaksEnabled", 0);
+setgametypesetting("forceradar", 0);
+SetDvar("scr_showperksonspawn", 0);
+setgametypesetting("hardcoremode", false);
+}
+
+if(getDvar("g_gametype") == "shrp")
+{
+setgametypesetting("teamCount", 1);
+setgametypesetting("scorelimit", 0);
+setgametypesetting("allowInGameTeamChange", 0);
+setgametypesetting("loadoutKillStreaksEnabled", 1);
+setgametypesetting("pointsPerWeaponKill", 10);
+setgametypesetting("pointsPerMeleeKill", 10);
+setgametypesetting("pointsForSurvivalBonus", 5);
+setgametypesetting("forceradar", 0);
+setgametypesetting("weaponTimer", 30 );
+setgametypesetting("weaponCount", 10 );
+setgametypesetting("teamScorePerKill", 10);
+SetDvar("scr_showperksonspawn", 0);
+setgametypesetting("playerNumLives", 0);
+setgametypesetting("hardcoremode", false);
+}
+
+if(getDvar("g_gametype") == "sas")
+{
+setgametypesetting("teamCount", 1);
+setgametypesetting("timelimit", 4); 
+setgametypesetting("scorelimit", 0);
+setgametypesetting("gunSelection", 1);
+setgametypesetting("setbacks", 0);
+setgametypesetting("allowInGameTeamChange", 0);
+setgametypesetting("roundStartExplosiveDelay", 0);
+setgametypesetting("loadoutKillStreaksEnabled", 0);
+setgametypesetting("pointsPerPrimaryKill", 10);
+setgametypesetting("pointsPerSecondaryKill", 10);
+setgametypesetting("pointsPerPrimaryGrenadeKill", 5);
+setgametypesetting("pointsPerMeleeKill", 5);
+setgametypesetting("forceradar", 0);
+SetDvar("scr_showperksonspawn", 0);
+setgametypesetting("disableCAC", false);
+setgametypesetting("playerNumLives", 0);
+setgametypesetting("hardcoremode", false);
+}
+
+if(getDvar("g_gametype") == "koth")
+{
+setgametypesetting("teamCount", 2);
+setgametypesetting("timelimit", 5); 
+setgametypesetting("scorelimit", 250);
+setgametypesetting("autoDestroyTime", 60);
+setgametypesetting("captureTime", 3);
+setgametypesetting("objectiveSpawnTime", 0);
+setgametypesetting("randomObjectiveLocations", 0);
+setgametypesetting("scorePerPlayer", 1);
+SetDvar("scr_showperksonspawn", 1);
+setgametypesetting("disableCAC", false);
+setgametypesetting("allowInGameTeamChange", true);
+setgametypesetting("playerNumLives", 0);
+setgametypesetting("hardcoremode", false);
+}
